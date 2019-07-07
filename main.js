@@ -108,12 +108,13 @@ projects.forEach(pro => {
           return resp.json()
         })
         .then(userjson => {
-          console.log(userjson)
           userimage.src = userjson.avatar_url
         })
         .catch(err => {
           console.log(err)
         })
+
+      console.log(json)
     })
     .catch(err => {
       console.log(err)
