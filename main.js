@@ -36,9 +36,33 @@ projects.forEach(pro => {
         }</span>
         <span><i class="fas fa-code-branch"></i>&nbsp;${json.forks_count}</span>
         <span><i class="fas fa-star"></i>&nbsp;${json.stargazers_count}</span>
-        <span>Updated ${Math.round(
+        <span>Updated ${
+          Math.round(
+            (new Date() - new Date(json.updated_at)) / (1000 * 3600 * 24),
+          ) === 0
+            ? Math.round(
+                (new Date() - new Date(json.updated_at)) / (1000 * 3600),
+              ) === 0
+              ? Math.round(
+                  (new Date() - new Date(json.updated_at)) / (1000 * 60),
+                )
+              : Math.round(
+                  (new Date() - new Date(json.updated_at)) / (1000 * 3600),
+                )
+            : Math.round(
+                (new Date() - new Date(json.updated_at)) / (1000 * 3600 * 24),
+              )
+        } ${
+        Math.round(
           (new Date() - new Date(json.updated_at)) / (1000 * 3600 * 24),
-        )} days ago</span>
+        ) === 0
+          ? Math.round(
+              (new Date() - new Date(json.updated_at)) / (1000 * 3600),
+            ) === 0
+            ? 'minutes'
+            : 'hours'
+          : 'days'
+      } ago</span>
       </div>
     </div>
     <hr />
