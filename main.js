@@ -113,12 +113,13 @@ projects.forEach(pro => {
         .catch(err => {
           console.log(err)
         })
-
-      console.log(json)
     })
     .catch(err => {
       console.log(err)
     })
 })
 
-console.log(new Date())
+setInterval(() => {
+  document.querySelector('.loader-container').style.display = 'none'
+  document.querySelector('.content').style.display = 'block'
+}, 1500)
