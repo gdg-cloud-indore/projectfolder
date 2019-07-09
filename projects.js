@@ -45,6 +45,6 @@ const projects = [
     email: 'tushar.sadhwani000@gmail.com',
     contact: 8982807656,
     profile: 'tusharsadhwani',
-    projectrepo: 'gdg-cloud-indore/cslab',
+    projectrepo: 'gdg-cloud-indore/cslabs',
   },
 ]
