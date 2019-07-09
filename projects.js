@@ -5,7 +5,7 @@ const projects = [
     email: 'udisen97@gmail.com',
     contact: 9826942288,
     profile: 'aedit',
-    projectrepo: 'gdg-cloud-indore/projectfolder',
+    projectrepo: 'aedit/gdgcloudprojects',
   },
   {
     num: 2,
@@ -37,6 +37,14 @@ const projects = [
     email: 'harshitjain1309@gmail.com',
     contact: 9479756888,
     profile: 'iharshit009',
-    projectrepo: 'oss2019/naarad',
+    projectrepo: 'gdg-cloud-indore/naarad',
+  },
+  {
+    num: 6,
+    name: 'Tushar Sadhwani',
+    email: 'tushar.sadhwani000@gmail.com',
+    contact: 8982807656,
+    profile: 'tusharsadhwani',
+    projectrepo: 'gdg-cloud-indore/cslab',
   },
 ]
