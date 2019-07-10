@@ -26,7 +26,9 @@ header {
   width: 20%;
   text-align: center;
 }
-
+.menu-button {
+  display: none;
+}
 .menu ul {
   height: 100%;
   list-style: none;
@@ -248,6 +250,32 @@ footer {
 }
 
 @media only screen and (max-width: 1000px) {
+  .menu-button {
+    height: 100%;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+  }
+  .menu ul {
+    position: absolute;
+    top: 400%;
+    left: 0;
+    flex-direction: column;
+    height: 0%;
+    display: none;
+    transition: height 0.3s linear;
+  }
+  .menu * {
+    background: white;
+    width: 100%;
+  }
+  .show-menu {
+    height: 100% !important;
+    display: flex !important;
+    transition: height 0.3s linear;
+  }
   .repo-card {
     width: 85%;
     flex-direction: column;

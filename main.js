@@ -145,3 +145,8 @@ projects.forEach(pro => {
       console.log(err)
     })
 })
+
+const showmenu = () => {
+  document.querySelector('.menu ul').classList.toggle('show-menu')
+  console.log('showing menu')
+}
