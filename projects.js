@@ -47,4 +47,12 @@ const projects = [
     profile: 'tusharsadhwani',
     projectrepo: 'gdg-cloud-indore/cslabs',
   },
+  {
+    num: 6,
+    name: 'Ritik Jain',
+    email: 'ritikjain1272@gmail.com',
+    contact: 9424913170,
+    profile: 'rits1272',
+    projectrepo: 'gdg-cloud-indore/pyquotes',
+  },
 ]
