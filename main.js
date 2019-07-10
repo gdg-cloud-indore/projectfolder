@@ -11,10 +11,11 @@ projects.forEach(pro => {
     },
   })
     .then(resp => {
+      document.querySelector('.loader-container').style.display = 'none'
+      document.querySelector('main').style.display = 'flex'
       return resp.json()
     })
     .then(json => {
-      const user = 'sd'
       const newDiv = document.createElement('div')
 
       newDiv.classList.add('repo-card')
@@ -27,9 +28,9 @@ projects.forEach(pro => {
       <span class="repo-description"
         >${json.description}</span
       >
-      <div class="repo-topics topics-${json.name}">
+      <p class="repo-topics topics-${json.name}">
       
-        </div>
+        </p>
       <div class="repo-counts">
         <span><i class="fas fa-balance-scale"></i>&nbsp;${
           json.license ? json.license.name : 'None'
@@ -82,8 +83,10 @@ projects.forEach(pro => {
           pro.profile
         }"> <i class="fab fa-github"></i>&nbsp;Github </a></span
       >
-      <span class="user-contact">
-        <i class="fas fa-phone"></i>&nbsp;${pro.contact}</span
+      <span >
+        <i class="fas fa-phone"></i>&nbsp;<a class="user-contact" href="tel:+91${
+          pro.contact
+        }">${pro.contact}</a></span
       >
     </div>
   
@@ -142,8 +145,3 @@ projects.forEach(pro => {
       console.log(err)
     })
 })
-
-setInterval(() => {
-  document.querySelector('.loader-container').style.display = 'none'
-  document.querySelector('.content').style.display = 'block'
-}, 1500)
