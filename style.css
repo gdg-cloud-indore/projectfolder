@@ -9,10 +9,6 @@ body {
   overflow-x: hidden;
 }
 
-.nosize {
-  display: none;
-}
-
 header {
   display: flex;
   flex-direction: row;
@@ -29,9 +25,6 @@ header {
 .title {
   width: 20%;
   text-align: center;
-}
-
-.menu {
 }
 
 .menu ul {
